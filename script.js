@@ -27,7 +27,7 @@ const displayNotes = () => {
     notesObj.forEach((element, index) => {
         notesCode += `
         <div class="noteCard my-2 mx-2 card">
-            <div class="card-body">
+            <div class="card-body" style="width: 18rem;>
                 <h5 class="card-title">${element.title}</h5>
                 <p class="card-text"> ${element.text}</p>
                 <button id="${index}"onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
